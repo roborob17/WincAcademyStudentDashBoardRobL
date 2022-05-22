@@ -1,9 +1,9 @@
 import React, {useContext} from 'react';
 import BarChartComponent from './BarChartComponent';
 
-import {AssignmentNamesContext} from '../../context/AssignmentNamesContext';
-import {DataContext} from '../../context/DataContext';
-import {AssignmentShortNamesContext} from '../../context/AssignmentShortNamesContext';
+import {AssignmentNamesContext} from '../context/AssignmentNamesContext';
+import {DataContext} from '../context/DataContext';
+import {AssignmentShortNamesContext} from '../context/AssignmentShortNamesContext';
 
 const BarChart = () => {
 	const assignments = useContext(AssignmentNamesContext);
@@ -29,16 +29,16 @@ const BarChart = () => {
 		labels: assignmentNames,
 		datasets: [
 			{
-				label: 'Hoe moeilijk vond je deze opdracht?',
+				label: 'How difficult was the assignment?',
 				data: averageAllAssignments('moeilijk'),
-				backgroundColor: 'red',
+				backgroundColor: 'orange',
 				borderColor: 'black',
 				borderWidth: 1,
 			},
 			{
-				label: 'Hoe leuk vond je deze opdracht?',
+				label: 'How much fun was the assignment?',
 				data: averageAllAssignments('leuk'),
-				backgroundColor: '#1da1f2',
+				backgroundColor: '#081145',
 				borderColor: 'black',
 				borderWidth: 1,
 			},
@@ -47,7 +47,9 @@ const BarChart = () => {
 
 	return (
 		<div className='bar-chart'>
-			<p>Dit zijn de gemiddelden van alle opdrachten</p>
+			<p>These are the averages of all assignments and projects. <br/>
+				<br/> Press "How difficult.." or "How much fun..." at the bottom of the stats to choose one or the other.
+			</p>
 			<BarChartComponent dataAverage={dataAverage}/>
 		</div>
 	);

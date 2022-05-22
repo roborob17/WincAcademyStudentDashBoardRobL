@@ -2,8 +2,8 @@ import React, {useContext} from 'react';
 import { useParams } from 'react-router-dom';
 import StudentsComponent from './StudentsComponent';
 
-import {AssignmentShortNamesContext} from '../../context/AssignmentShortNamesContext';
-import {DataContext} from '../../context/DataContext'
+import {AssignmentShortNamesContext} from '../context/AssignmentShortNamesContext';
+import {DataContext} from '../context/DataContext'
 
 const Students = () => {
 	let { id } = useParams();
@@ -22,16 +22,16 @@ const Students = () => {
 		labels: assignmentNames,
 		datasets: [
 			{
-				label: 'Hoe moeilijk vond je deze opdracht?',
+				label: 'How difficult was the assignment?',
 				data: gradesByType('moeilijk'),
-				backgroundColor: 'red',
+				backgroundColor: 'orange',
 				borderColor: 'black',
 				borderWidth: 1,
 			},
 			{
-				label: 'Hoe leuk vond je deze opdracht?',
+				label: 'How much fun was the assignment?',
 				data: gradesByType('leuk'),
-				backgroundColor: '#1da1f2',
+				backgroundColor: '#081145',
 				borderColor: 'black',
 				borderWidth: 1,
 			},
@@ -40,7 +40,7 @@ const Students = () => {
 
 	return (
 		<div className='student-chart'>
-			<p>Dit zijn de resultaten van {id}</p>
+			<p>These are the results of {id}</p>
 			<StudentsComponent studentsData={studentsData}/>
 		</div>
 	);

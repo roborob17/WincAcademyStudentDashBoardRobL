@@ -3,25 +3,25 @@ import BarChart from './components/BarChart';
 import PerAssignment from './components/PerAssignment';
 import Students from './components/Students';
 
-import {AssignmentProvider} from '../context/AssignmentContext';
-import {AssignmentNamesProvider} from '../context/AssignmentNamesContext';
-import {DataProvider} from '../context/DataContext';
-import {AssignmentShortNamesProvider} from '../context/AssignmentShortNamesContext';
+import {AssignmentProvider} from './context/AssignmentContext';
+import {AssignmentNamesProvider} from './context/AssignmentNamesContext';
+import {DataProvider} from './context/DataContext';
+import {AssignmentShortNamesProvider} from './context/AssignmentShortNamesContext';
 
 import { Switch, Route } from 'react-router-dom';
 
-import './../styles/MainContainer.css';
+import './styles/Main.css';
 
-const MainContainer = () => {
+const Main = () => {
 
 	return (
     <DataProvider>
     <AssignmentNamesProvider>
     <AssignmentProvider>
     <AssignmentShortNamesProvider>
-		<div className='main-container'>
+		<div className='main'>
 			<Switch>
-				<Route path='/opdrachten'>
+				<Route path='/assignments'>
 					<PerAssignment />
 				</Route>
 				<Route path='/:id'>
@@ -39,4 +39,4 @@ const MainContainer = () => {
 	);
 };
 
-export default MainContainer;
+export default Main;

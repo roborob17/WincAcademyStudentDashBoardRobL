@@ -3,8 +3,8 @@ import React, { useContext } from 'react';
 import Dropdown from './Dropdown';
 import PerAssignmentComponent from './PerAssignmentComponent';
 
-import {AssignmentContext} from '../../context/AssignmentContext';
-import {DataContext} from '../../context/DataContext';
+import {AssignmentContext} from '../context/AssignmentContext';
+import {DataContext} from '../context/DataContext';
 
 const PerAssignment = () => {
   const [assignment, setAssignment] = useContext(AssignmentContext); // eslint-disable-line
@@ -24,16 +24,16 @@ const PerAssignment = () => {
 		labels: students,
 		datasets: [
 			{
-				label: 'Hoe moeilijk vond je deze opdracht?',
+				label: 'How difficult was the assignment?',
 				data: getGrades('moeilijk'),
-				backgroundColor: 'red',
+				backgroundColor: 'orange',
 				borderColor: 'black',
 				borderWidth: 1,
 			},
 			{
-				label: 'Hoe leuk vond je deze opdracht?',
+				label: 'How much fun was the assignment?',
 				data: getGrades('leuk'),
-				backgroundColor: '#1da1f2',
+				backgroundColor: '#081145',
 				borderColor: 'black',
 				borderWidth: 1,
 			},
@@ -42,7 +42,9 @@ const PerAssignment = () => {
 
 	return (
 		<div className='per-assignment'>
-			<p>Hier kun je de cijfers per opdracht bekijken</p>
+			<p>Please choose from the dropdown list which assignment you wish to see.
+				<br/> Press "How difficult.." or "How much fun..." at the bottom of the stats to choose one or the other.
+			</p>
 			<Dropdown />
       <PerAssignmentComponent dataAssignments={dataAssignments}/>
 		</div>

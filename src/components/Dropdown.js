@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 
-import '../../styles/Dropdown.css';
+import '../styles/Dropdown.css';
 
-import {AssignmentNamesContext} from '../../context/AssignmentNamesContext';
-import {AssignmentContext} from '../../context/AssignmentContext';
+import {AssignmentNamesContext} from '../context/AssignmentNamesContext';
+import {AssignmentContext} from '../context/AssignmentContext';
 
 const Dropdown = () => {
   const assignments = useContext(AssignmentNamesContext);
@@ -17,7 +17,7 @@ const Dropdown = () => {
 		<div className='dropdown'>
 			<form>
 				<select onChange={handleChange}>
-					<option hidden>Kies een opdracht</option>
+					<option hidden>Choose an assignment</option>
 					{assignments.map((item) => (
 						<option value={item} key={item}>
 							{item}

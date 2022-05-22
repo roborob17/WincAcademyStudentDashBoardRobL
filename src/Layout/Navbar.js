@@ -15,7 +15,7 @@ const Navbar = () => {
 					<Link to='/'>Home</Link>
 				</li>
 				<li>
-					<Link to='/opdrachten'>Opdrachten</Link>
+					<Link to='/assignments'>Assignments</Link>
 				</li>
 				{students.map((student) => (
 					<li key={student}>

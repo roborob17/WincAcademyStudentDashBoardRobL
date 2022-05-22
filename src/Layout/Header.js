@@ -1,9 +1,11 @@
 import '../styles/Header.css'
+import iconDashboard from "../components/Dashboard.png";
 
 const Header = () => {
   return (
     <header>
-      <h1>Students Dashboard</h1>
+      <img src={iconDashboard} alt="problem loading img"></img>
+      <h1>Winc Academy Students Dashboard</h1>
     </header>
   )
 }

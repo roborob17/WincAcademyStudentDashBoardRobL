@@ -1,8 +1,8 @@
-import './App.css';
-import MainContainer from './container/MainContainer';
-import Header from './Layout/Header';
-import Navbar from './Layout/Navbar';
-
+import './styles/App.css';
+import Main from './Main';
+import Header from './layout/Header';
+import Navbar from './layout/Navbar';
+import Footer from './layout/Footer';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
 			<div className='App'>
 				<Header />
 				<Navbar />
-				<MainContainer />
+				<Main />
 			</div>
 		</Router>
 	);
