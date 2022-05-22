@@ -7,9 +7,7 @@ import {AssignmentProvider} from './context/AssignmentContext';
 import {AssignmentNamesProvider} from './context/AssignmentNamesContext';
 import {DataProvider} from './context/DataContext';
 import {AssignmentShortNamesProvider} from './context/AssignmentShortNamesContext';
-
 import { Switch, Route } from 'react-router-dom';
-
 import './styles/Main.css';
 
 const Main = () => {

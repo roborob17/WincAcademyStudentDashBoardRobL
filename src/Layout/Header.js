@@ -1,5 +1,5 @@
 import '../styles/Header.css'
-import iconDashboard from "../components/Dashboard.png";
+import iconDashboard from "../components/assets/Winclogo.png";
 
 const Header = () => {
   return (

@@ -1,7 +1,5 @@
 import React, { useContext } from 'react';
-
 import '../styles/Dropdown.css';
-
 import {AssignmentNamesContext} from '../context/AssignmentNamesContext';
 import {AssignmentContext} from '../context/AssignmentContext';
 

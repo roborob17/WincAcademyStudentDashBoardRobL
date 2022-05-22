@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
 import BarChartComponent from './BarChartComponent';
-
 import {AssignmentNamesContext} from '../context/AssignmentNamesContext';
 import {DataContext} from '../context/DataContext';
 import {AssignmentShortNamesContext} from '../context/AssignmentShortNamesContext';

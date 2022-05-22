@@ -1,7 +1,6 @@
 import React, {useContext} from 'react';
 import { useParams } from 'react-router-dom';
 import StudentsComponent from './StudentsComponent';
-
 import {AssignmentShortNamesContext} from '../context/AssignmentShortNamesContext';
 import {DataContext} from '../context/DataContext'
 

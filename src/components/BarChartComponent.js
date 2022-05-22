@@ -5,8 +5,8 @@ const BarChartComponent = ({dataAverage}) => {
   return (
     <Bar
     data={dataAverage}
-    height={400}
-    width={1600}
+    height={500}
+    width={1440}
     options={{
       maintainAspectRatio: false,
       responsive: true,
