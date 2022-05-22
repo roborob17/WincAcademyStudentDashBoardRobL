@@ -1,8 +1,8 @@
 import React, {useContext} from 'react';
 import { useParams } from 'react-router-dom';
 import StudentsComponent from './StudentsComponent';
-import {AssignmentShortNamesContext} from '../context/AssignmentShortNamesContext';
-import {DataContext} from '../context/DataContext'
+import {AssignmentShortNamesContext} from './context/AssignmentShortNamesContext';
+import {DataContext} from './context/DataContext'
 
 const Students = () => {
 	let { id } = useParams();
@@ -40,6 +40,7 @@ const Students = () => {
 	return (
 		<div className='student-chart'>
 			<p>These are the results of {id}</p>
+			<p>Press "How difficult.." or "How much fun..." at the bottom of the stats to choose one or the other.</p>
 			<StudentsComponent studentsData={studentsData}/>
 		</div>
 	);

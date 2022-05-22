@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import '../styles/Dropdown.css';
-import {AssignmentNamesContext} from '../context/AssignmentNamesContext';
-import {AssignmentContext} from '../context/AssignmentContext';
+import {AssignmentNamesContext} from '../components/context/AssignmentNamesContext';
+import {AssignmentContext} from '../components/context/AssignmentContext';
 
 const Dropdown = () => {
   const assignments = useContext(AssignmentNamesContext);

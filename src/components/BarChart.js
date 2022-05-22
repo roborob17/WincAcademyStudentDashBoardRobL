@@ -1,8 +1,8 @@
 import React, {useContext} from 'react';
 import BarChartComponent from './BarChartComponent';
-import {AssignmentNamesContext} from '../context/AssignmentNamesContext';
-import {DataContext} from '../context/DataContext';
-import {AssignmentShortNamesContext} from '../context/AssignmentShortNamesContext';
+import {AssignmentNamesContext} from '../components/context/AssignmentNamesContext';
+import {DataContext} from '../components/context/DataContext';
+import {AssignmentShortNamesContext} from '../components/context/AssignmentShortNamesContext';
 
 const BarChart = () => {
 	const assignments = useContext(AssignmentNamesContext);

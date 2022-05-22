@@ -3,10 +3,10 @@ import BarChart from './components/BarChart';
 import PerAssignment from './components/PerAssignment';
 import Students from './components/Students';
 
-import {AssignmentProvider} from './context/AssignmentContext';
-import {AssignmentNamesProvider} from './context/AssignmentNamesContext';
-import {DataProvider} from './context/DataContext';
-import {AssignmentShortNamesProvider} from './context/AssignmentShortNamesContext';
+import {AssignmentProvider} from './components/context/AssignmentContext';
+import {AssignmentNamesProvider} from './components/context/AssignmentNamesContext';
+import {DataProvider} from './components/context/DataContext';
+import {AssignmentShortNamesProvider} from './components/context/AssignmentShortNamesContext';
 import { Switch, Route } from 'react-router-dom';
 import './styles/Main.css';
 

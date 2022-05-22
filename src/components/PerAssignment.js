@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import Dropdown from './Dropdown';
 import PerAssignmentComponent from './PerAssignmentComponent';
 
-import {AssignmentContext} from '../context/AssignmentContext';
-import {DataContext} from '../context/DataContext';
+import {AssignmentContext} from './context/AssignmentContext';
+import {DataContext} from './context/DataContext';
 
 const PerAssignment = () => {
   const [assignment, setAssignment] = useContext(AssignmentContext); // eslint-disable-line
