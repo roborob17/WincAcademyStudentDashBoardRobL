@@ -1,0 +1,29 @@
+.navbar {
+  padding: 10px 0;
+  border-bottom: 1px lightgray solid;
+}
+
+.navbar ul{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: purple;
+}
+
+.navbar a:hover {
+  color: red;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .navbar ul {
+    flex-direction: row;
+    margin: auto;
+  }
+}
